@@ -1,0 +1,292 @@
+
+/* general page */
+html, body {
+    overflow: auto;
+  font-family: "consolas", sans-serif;
+  font-size: 10px;
+}
+
+body {
+  width: 80%;
+}
+
+ b, strong { color: #f0763e; font-weight:400; }
+ i,em { color: #e89262; }
+ a { color: #f0c073; }
+ a:hover { color: #c9c9c9; }
+
+@font-face {
+  font-family: "pix";
+  src: url("https://dl.dropboxusercontent.com/s/68bdyrv4fsayhg8/04B_03__.TTF");
+}
+
+@font-face {
+  font-family: "bit";
+  src: url("https://dl.dropboxusercontent.com/s/sq28ejp56rarabs/BitxMap%20Font%20tfb.ttf");
+}
+
+@font-face {
+  font-family: "Lekton";
+  src: url("https://fonts.gstatic.com/s/lekton/v11/SZc43FDmLaWmWpBuWB3p.woff2");
+}
+
+
+/* scroller width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* scroller track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 0px grey; 
+  border-radius: 2px;
+}
+ 
+/* scroller bar */
+::-webkit-scrollbar-thumb {
+  background: #303030; 
+  border-radius: 0px;
+}
+
+/* scroller bar on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #000000; 
+}
+
+/* headings*/
+
+h1 {
+  color: lightblue;
+  text-align: center;
+  font-family: "Lekton", sans-serif;
+  font-size: 15px;
+  font-weight: normal;
+}
+
+h2 {
+  color: 000000;
+  display:block;
+  width:538px;
+  background:#fff;
+  text-align: center;
+  border: 1px solid #999999;
+  box-shadow: 3px 3px #999999;
+  padding: 3px 20px 3px 20px;
+  margin: 0px;
+  text-transform: uppercase;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: lightblue;
+  font-family: "bit";
+  font-size: 10px;
+  font-weight: normal;
+  letter-spacing: 2px;
+}
+
+h3 {
+  color: 000000;
+  display:block;
+  background:#fff;
+  text-align: center;
+  border: 1px solid #999999;
+  box-shadow: 3px 3px #999999;
+  padding: 3px 20px 3px 20px;
+  margin: 0px;
+  text-transform: uppercase;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: lightblue;
+  font-family: "bit";
+  font-size: 10px;
+  font-weight: normal;
+  letter-spacing: 2px;
+}
+
+
+/*divs*/
+
+#content {
+  -webkit-overflow-scrolling: touch;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -moz-flex-direction: column;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -moz-align-items: center;
+  -webkit-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  -moz-justify-content: center;
+  -webkit-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  min-height: 50vh;
+  position: relative;
+  margin: 0px 0px;
+  z-index: 200;
+  overflow: hidden;
+}
+
+.entry {
+   width: 540px;
+  min-height: 50px;
+  max-height: 200px;
+  overflow: scroll;
+  margin-bottom: 5px;
+  padding: 5px 20px 0px 20px;
+  background-color: #f3f3f3;
+  border-radius: 0px;
+  box-shadow: 3px 3px #999999;
+   text-indent: 20px;
+}
+
+.wrap { width: 540px; 
+  padding: 5px 20px 0px 20px;
+  border-radius: 0px;}
+
+.sub {
+   width: 100%;
+  min-height: 50px;
+  max-height: 200px;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  margin-bottom: 5px;
+  border-radius: 0px;
+   text-indent: 20px;
+}
+
+
+#sidebar {
+    position: fixed;
+    background-image: url(https://static.tumblr.com/9353673de44759c632aafb0f730ad330/2icx37z/SIwmwxbhf/tumblr_static_bg-advanced-pattern-light.png);
+  margin: 0px 250px;
+    z-index: 1000;
+    width: 200px;
+  height: 100%;
+   background-color: #ffffff;
+  padding: 0px 10px 0px 10px;
+    
+}
+
+
+.t {
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-align: center;
+    padding: px;
+    margin:10px;
+    font-family: bit;
+    position: relative;
+    border-radius: 5px;
+    margin-top: 5px;
+    background-color: #ffffff;
+    border: 1px solid #aaaaaa;
+    color: #000000;
+    opacity: 0.4;
+    text-transform: uppercase;
+    transition: 0.8s;
+    -moz-transition: 0.8s;
+    -webkit-transition: 0.8s;
+    z-index:1;
+    text-transform: uppercase;
+}
+
+
+#sidebar:hover .t {
+  margin-top: -100px;}
+
+.prev {
+    font-family: pix;
+    overflow: auto;
+    font-size: 10px;
+    text-align: justify;
+    text-transform: uppercase;
+    position: relative;
+    border: 1px solid transparent;
+    color: transparent;
+    border-radius: 5px;
+    height: 100%;
+    padding: 5px;
+    font-size: 8px;
+    background-color: ;
+    border: 0px solid #aaaaaa;
+    color: #555555;
+    transition: 0.8s;
+    -moz-transition: 0.8s;
+    -webkit-transition: 0.8s;
+
+}
+
+.im { 
+    transition: 0.8s;
+    -moz-transition: 0.8s;
+    -webkit-transition: 0.8s;
+    opacity: 0.8;
+  width: 100%;
+}
+
+
+.desc {
+    font-family: pix;
+    overflow: auto;
+    font-size: 10px;
+    text-align: justify;
+    text-transform: uppercase;
+    position: fixed;
+    border: 1px solid transparent;
+    color: transparent;
+    border-radius: 5px;
+    height: 80px;
+    padding: 5px;
+    margin-top: 0px;
+    font-size: 8px;
+    opacity: 0;
+    background-color: #ffffff;
+    border: 1px solid #aaaaaa;
+    color: #555555;
+    transition: 0.8s;
+    -moz-transition: 0.8s;
+    -webkit-transition: 0.8s;
+}
+
+#sidebar:hover .prev { opacity: 0; }
+
+#sidebar:hover .im { margin-top: 0px;  -moz-transition: 0.8s;
+  -webkit-transition: 0.8s; }
+
+.nav {
+  padding: 5px;
+   opacity: 0; 
+  -moz-transition: 0.8s;
+  -webkit-transition: 0.8s;
+}
+
+.nav a { 
+  display:block;
+  color:black;
+  text-align: center; 
+  text-transform: uppercase;
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: black;
+  font-family: "bit";
+  font-size: 10px;
+  font-weight: normal;
+  letter-spacing: 2px;
+    opacity: 0; 
+  -moz-transition: 0.8s;
+  -webkit-transition: 0.8s;}
+
+
+#sidebar:hover .nav, #sidebar:hover .prev { 
+  -moz-transition: 0.8s;
+    -webkit-transition: 0.8s; }
+
+#sidebar:hover .desc,  #sidebar:hover .t, #sidebar:hover .nav, #sidebar:hover .nav a  { 
+  opacity: 0.8; }
+
+.nav:hover a:hover {
+  background-color: #f0c073;
+  opacity: 1;
+}
